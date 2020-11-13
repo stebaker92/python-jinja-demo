@@ -12,8 +12,6 @@ python -m venv venv
 source venv/bin/activate
 python run.py
 
-Web server will pick up any HTML changes
-
 ## Files
 
 layout.html
