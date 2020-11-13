@@ -25,6 +25,17 @@ Minus will strip out any whitespace in the macro output (minus can also be used 
 ---
 ## Reusable code (macros, includes, blocks)
 
+### Variables
+```
+{% set my_var = 'Foo' %}
+```
+
+Variables are scoped to their block:
+https://github.com/pallets/jinja/issues/330
+
+If you need to change variables in a different scope or block (e.g. inside a for loop), look into Jinja namespaces
+
+
 ### Macros
 ```
 {% macro get_hello(name) %}
@@ -85,10 +96,33 @@ https://stackoverflow.com/questions/52226293/jinja2-check-if-value-exists-in-lis
 
 ---
 ## Filters
+Read more about filters here:
+
 https://www.webforefront.com/django/usebuiltinjinjafilters.html
 
+https://svn.python.org/projects/external/Jinja-1.1/docs/build/builtins.html
 
 ### Strings
 ```
 {{ my_list|join(', ') }}
+```
+
+--- 
+
+## Resources
+todo.
+
+Jinja2 Docs
+https://jinja.palletsprojects.com/en/2.11.x/
+
+
+## Debugging tips 
+todo. 
+
+One of the most helpful tips is rendering out an expression like so:
+
+```
+'my_var' is: {{ my_var }}
+<br/>
+'my_var == True' is: {{ my_var == True }}
 ```
