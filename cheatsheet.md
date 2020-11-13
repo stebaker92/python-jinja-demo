@@ -2,6 +2,7 @@
 # Jinja Cheatsheet
 A basic cheatsheet for the most common & helpful Jinja features
 
+{% raw %}
 
 ## Common Syntax
 ```
@@ -92,3 +93,6 @@ https://www.webforefront.com/django/usebuiltinjinjafilters.html
 ```
 {{ my_list|join(', ') }}
 ```
+
+
+{% endraw %}
