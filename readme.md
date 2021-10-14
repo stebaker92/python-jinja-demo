@@ -2,15 +2,18 @@
 Just a simple demo website using Jinja and Python Flask
 
 ## Installation
+```
 python -m venv venv
 source venv/bin/activate
 pip install -r requirements.txt
+```
 
 ## Running
-
+```
 python -m venv venv
 source venv/bin/activate
 python run.py
+```
 
 ## Files
 
